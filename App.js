@@ -46,12 +46,9 @@ export default function App() {
       </ScrollView>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Here is a new line from Alice!</Text>
-<<<<<<< HEAD
       <Text>Here is another new line from Alice, but this time on Alice's own branch! This is new!</Text>
       <Text>Here is a third line from Alice on her branch!</Text>
-=======
       <Text>Here is a new line from Michael!</Text>
->>>>>>> d4c8dc4fc97cdcde23bfdd8d6bfdb4cd0880e32d
       <StatusBar style="auto" />
     </View>
   );
