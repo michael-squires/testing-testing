@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -6,22 +6,19 @@ import {
   TouchableOpacity,
   TextInput,
   ScrollView,
-} from 'react-native';
+} from "react-native";
 
-import Icon from 'react-native-vector-icons/Feather'
-import TodoList from './components/TodoList';
-
-
+import Icon from "react-native-vector-icons/Feather";
+import TodoList from "./components/TodoList";
 
 export default function App() {
-
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
 
   const addTodo = () => {
     if (value.length > 0) {
       setTodos([...todos, { text: value, key: Date.now(), checked: false }]);
-      setValue('');
+      setValue("");
     }
   };
 
@@ -36,19 +33,23 @@ export default function App() {
           placeholderTextColor="#abbabb"
         />
         <TouchableOpacity onPress={() => addTodo()}>
-          <Icon name='plus' size={30} color='blue' style={{ marginLeft: 15 }} />
+          <Icon name="plus" size={30} color="blue" style={{ marginLeft: 15 }} />
         </TouchableOpacity>
       </View>
-      <ScrollView style={{ width: '100%' }}>
-        {todos.map(item => (
+      <ScrollView style={{ width: "100%" }}>
+        {todos.map((item) => (
           <TodoList text={item.text} key={item.key} />
         ))}
       </ScrollView>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Here is a new line from Alice!</Text>
-      <Text>Here is another new line from Alice, but this time on Alice's own branch! This is new!</Text>
+      <Text>
+        Here is another new line from Alice, but this time on Alice's own
+        branch! This is new!
+      </Text>
       <Text>Here is a third line from Alice on her branch!</Text>
       <Text>Here is a new line from Michael!</Text>
+      <Text>Here is a new line from Martha!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -57,31 +58,31 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    justifyContent: "flex-start",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF",
   },
   header: {
-    marginTop: '15%',
+    marginTop: "15%",
     fontSize: 20,
-    color: 'red',
-    paddingBottom: 10
+    color: "red",
+    paddingBottom: 10,
   },
   textInputContainer: {
-    flexDirection: 'row',
-    alignItems: 'baseline',
-    borderColor: 'black',
+    flexDirection: "row",
+    alignItems: "baseline",
+    borderColor: "black",
     borderBottomWidth: 1,
     paddingRight: 10,
-    paddingBottom: 10
+    paddingBottom: 10,
   },
   textInput: {
     flex: 1,
     height: 20,
     fontSize: 18,
-    fontWeight: 'bold',
-    color: 'black',
+    fontWeight: "bold",
+    color: "black",
     paddingLeft: 10,
-    minHeight: '3%'
-  }
+    minHeight: "3%",
+  },
 });
