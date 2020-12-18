@@ -46,6 +46,7 @@ export default function App() {
       </ScrollView>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Here is a new line from Alice!</Text>
+      <Text>Here is a new line from Michael!</Text>
       <StatusBar style="auto" />
     </View>
   );
