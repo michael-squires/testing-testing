@@ -49,6 +49,7 @@ export default function App() {
       <Text>Here is another new line from Alice, but this time on Alice's own branch! This is new!</Text>
       <Text>Here is a third line from Alice on her branch!</Text>
       <Text>Here is a new line from Michael!</Text>
+      <Text>Here is a new line from Alice for Martha to check!</Text>
       <StatusBar style="auto" />
     </View>
   );
