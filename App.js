@@ -44,6 +44,9 @@ export default function App() {
           <TodoList text={item.text} key={item.key} />
         ))}
       </ScrollView>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Here is a new line from Alice!</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }
