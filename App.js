@@ -46,6 +46,7 @@ export default function App() {
       </ScrollView>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Here is a new line from Alice!</Text>
+      <Text>Here is another new line from Alice, but this time on Alice's own branch! This is new!</Text>
       <StatusBar style="auto" />
     </View>
   );
